@@ -4,24 +4,8 @@
       <div class="icon-wrpaer">
         <div class="iconfont icon-a-Additionalquantity icon"></div>
       </div>
-      <div class="chapter">LESSION-1</div>
+      <div class="chapter">LESSION-1asdasd</div>
       <div class="desc">什麼是單元測試?</div>
-      <div class="btn">GO PAGE</div>
-    </div>
-     <div class="card">
-      <div class="icon-wrpaer">
-        <div class="iconfont icon-magic icon"></div>
-      </div>
-      <div class="chapter">LESSION-2</div>
-      <div class="desc">單元測試要幹嘛</div>
-      <div class="btn">GO PAGE</div>
-    </div>
-     <div class="card">
-      <div class="icon-wrpaer">
-        <div class="iconfont icon-jest icon"></div>
-      </div>
-      <div class="chapter">LESSSION-3</div>
-      <div class="desc">什麼是單元悠點</div>
       <div class="btn">GO PAGE</div>
     </div>
   </div>
@@ -51,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 20px auto 20px auto;
+    margin: 0 auto 20px auto;
     .icon{
       font-size: 40px;
     }

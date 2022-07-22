@@ -16,11 +16,18 @@ const routes = [
      
     ]
   }, 
-  // {
-  //   path: '/about',
-  //   name: 'About',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  // }
+  {
+    path: '/chapter2',
+    name: 'Chapter2', 
+    component: Layout,
+    redirect:'cover2',
+    children: [
+      {
+        path: 'cover2',
+        component: () => import('../views/Chapter2/Cover2.vue')
+      },
+    ]
+  }
 ]
 
 const router = createRouter({
