@@ -5,13 +5,17 @@ import Layout from '../Layout'
 const routes = [
   {
     path: '/',
-    name: 'chapter1',
+    redirect:'/chapter1/cover1',
+  }, 
+  {
+    path: '/chapter1',
+    name: 'Chapter1',
     component: Layout,
-    redirect:'chapter1_1',
+    redirect:'/chapter1/cover1',
     children: [
       {
-        path: 'chapter1_1',
-        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Chapter1_1.vue')
+        path: 'cover1',
+        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Cover1.vue')
       },
      
     ]
@@ -20,11 +24,15 @@ const routes = [
     path: '/chapter2',
     name: 'Chapter2', 
     component: Layout,
-    redirect:'cover2',
+    redirect:'/chapter2/cover2',
     children: [
       {
         path: 'cover2',
-        component: () => import('../views/Chapter2/Cover2.vue')
+        component: () => import('../views/Chapter2')
+      },
+      {
+        path: 'lession1',
+        component: () => import('../views/Chapter2/Lession1')
       },
     ]
   }
