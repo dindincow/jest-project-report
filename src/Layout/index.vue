@@ -4,31 +4,17 @@
       <div class="title"><img src="../assets/logo.png"></div>
       <div class="menu">
         <ul>
-          <li>
-            <span class="iconfont icon-whatshot icon"></span>
-            <p>Ch1 -What單元測試?</p>
-          </li>
-          <li>
-            <span class="iconfont icon-jest icon"></span>
-            <p>Ch2 -關於Jest</p>
-          </li>
-          <li>
-            <span class="iconfont icon-vuejs icon"></span>
-            <p>Ch3 -Vue-test-until</p>
-          </li>
-          <li>
-            <span class="iconfont icon-magic icon"></span>
-            <p>Ch4 -實際運用例子</p>
-          </li>
-          <li>
-            <span class="iconfont icon-a-Additionalquantity icon"></span>
-            <p>Ch5 -補充</p>
-          </li>
+          <router-link :to="item.path" v-for="(item,index) in menuList" :key="index">
+            <li>
+              <span class="iconfont icon" :class="item.icon"></span>
+              <p>{{item.name}}</p>
+            </li>
+          </router-link> 
         </ul>
       </div>
     </div>
     <div class="right">
-      <div class="header">JEST + VUE-TEST-UNIT</div>
+      <div class="header">JEST + VUE-TEST-UNIT  COOK  BOOK</div>
       <div class="content"><router-view/></div>
     </div>
   </div>
@@ -36,8 +22,16 @@
 <script>
 export default {
   name: 'Layout',
-  components: {
-    
+  data(){
+    return{
+      menuList:[
+        {name:'Ch1 -What單元測試?', path:"/chapter1/cover1", icon:"icon-whatshot"},
+        {name:'Ch2 -關於Jest', path:"/chapter2/cover2", icon:"icon-jest"},
+        {name:'Ch3 -Vue-test-until', path:"/chapter3/cover3", icon:"icon-vuejs"},
+        {name:'Ch4 -實際運用例子', path:"/chapter4/cover4", icon:"icon-magic"},
+        {name:'Ch5 -補充', path:"/chapter5/cover5", icon:"icon-a-Additionalquantity"},
+      ]
+    }
   }
 }
 </script>
@@ -90,6 +84,7 @@ export default {
     line-height: 100px;
     padding: 0 40px;
     background: #fff;
+    text-align: center;
   }
   .content{
     padding: 40px;

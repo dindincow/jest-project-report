@@ -1,25 +1,35 @@
 <template>
   <div class="wraaper">
-    <div class="card">
+    <div class="card" v-for="(item,index) in lessionList" :key="index">
       <div class="icon-wrpaer">
         <div class="iconfont icon-a-Additionalquantity icon"></div>
       </div>
-      <div class="chapter">LESSION-1</div>
-      <div class="desc">匹配器</div>
-      <div class="btn">GO PAGE</div>
+      <div class="chapter">LESSION-{{item.lession}}</div>
+      <div class="desc">{{item.name}}</div>
+      <router-link :to="item.path"><div class="btn">PAGE</div></router-link>
     </div>
   </div>
 </template>
-
 <script>
-
+export default {
+  data(){
+    return{
+      lessionList:[
+        {name:'匹配器', lession:1, path:"/chapter2/lession1"},
+        {name:'異步測試方法', lession:2, path:"/chapter2/lession2"},
+        {name:'鉤子函數', lession:3, path:"/chapter2/lession3"},
+        {name:'mock', lession:4, path:"/chapter2/lession4"},
+      ]
+    }
+  }
+}
 </script>
 <style scoped lang="scss">
 .wraaper{
   display: flex;
 }
 .card{
-  padding: 20px;
+  padding: 30px 20px 20px;
   width: 230px;
   height: 250px;
   background: #fff;
@@ -46,11 +56,10 @@
     color: #e86d0b;
   }
   .desc{
-  
     font-size: 18px;
   }
   .btn{
-    margin-top: 20px;
+    margin-top: 40px;
     background: #ed9200;
     color: #fff;
     border-radius: 30px;

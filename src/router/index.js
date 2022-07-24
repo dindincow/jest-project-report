@@ -15,9 +15,20 @@ const routes = [
     children: [
       {
         path: 'cover1',
-        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Cover1.vue')
+        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1')
       },
-     
+      {
+        path: 'lession1',
+        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Lession1')
+      },
+      {
+        path: 'lession2',
+        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Lession2')
+      },
+      {
+        path: 'lession3',
+        component: () => import(/* webpackChunkName: "Chapter1_1" */ '../views/Chapter1/Lession3')
+      },  
     ]
   }, 
   {
@@ -33,6 +44,18 @@ const routes = [
       {
         path: 'lession1',
         component: () => import('../views/Chapter2/Lession1')
+      },
+      {
+        path: 'lession2',
+        component: () => import('../views/Chapter2/Lession2')
+      },
+      {
+        path: 'lession3',
+        component: () => import('../views/Chapter2/Lession3')
+      },
+      {
+        path: 'lession4',
+        component: () => import('../views/Chapter2/Lession4')
       },
     ]
   }
