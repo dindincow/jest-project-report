@@ -7,7 +7,7 @@
         <p><a href="https://jestjs.io/docs/using-matchers">https://jestjs.io/docs/using-matchers</a></p>
         <p><a href="https://jestjs.io/docs/expect">https://jestjs.io/docs/expect</a></p>
       </div>  
-      <div class="right"><img src="../../../assets/matchers.png"></div>
+      <div class="right"><img src="@/images/matchers.png"></div>
     </div>
     <!-- 內容 -->
     <div class="section-wrapper">

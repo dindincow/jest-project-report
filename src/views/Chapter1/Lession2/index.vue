@@ -9,7 +9,7 @@
       <div class="section">
         <h2><span class="iconfont icon-tips_chat icon"></span>關於這些單元測試、TDD、BDD 的意思?</h2>
       </div>
-      <div style="width:80%"><img src="@/assets/ch1-lession2-img1.png"></div>
+      <div style="width:80%"><img src="@/images/ch1-lession2-img1.png"></div>
     </div>  
   </div>
 

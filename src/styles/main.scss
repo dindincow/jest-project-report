@@ -41,6 +41,21 @@
   }
 }
 
-img{
-  width: 100%;
+// 字體定義
+.fw-blod{
+  font-weight: bold;
+}
+.fc-red{
+  color: #b62531;
+}
+
+// 顯示程式碼區塊
+.tip{
+  width: 50%;
+  padding: 10px 20px;
+  background: #393637;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  color: #fff;
 }

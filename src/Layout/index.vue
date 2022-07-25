@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <div class="left">
-      <div class="title"><img src="../assets/logo.png"></div>
+      <div class="title"><img src="@/images/logo.png"></div>
       <div class="menu">
         <ul>
           <router-link :to="item.path" v-for="(item,index) in menuList" :key="index">

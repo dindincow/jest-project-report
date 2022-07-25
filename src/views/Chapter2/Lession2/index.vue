@@ -11,12 +11,12 @@
     <div class="section-wrapper">
       <div class="left">
         <div class="question"><span class="iconfont icon-magic"></span> 如何寫測試後端回傳API是否為正確資料?</div>
-        <div class="img"><img src="@/assets/ch2-lession2.png"></div>
+        <div class="img"><img src="@/images/ch2-lession2.png"></div>
       </div>
       <div class="right">
         <h2><span class="iconfont icon-magic"></span> 重點筆記</h2>
         <p>1. 測試異步函數接收 callback function 時，需增加done 告訴程式，需要跑完  callback function 內容才算結束，如果沒加 done()，是不會跑 expect(data).toEqual({"success":true}) 這句的</p>
-        <div class="img"><img src="@/assets/ch2-lession2-1.png"></div>
+        <div class="img"><img src="@/images/ch2-lession2-1.png"></div>
         <p>2. 發請求結果成功，是不會執行catch 語句，就無法測試失敗的案例，所以需加上expect.assertions(1)，最少讓案例執行一次</p>
       </div>
     </div>

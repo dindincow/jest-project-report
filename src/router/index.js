@@ -58,6 +58,34 @@ const routes = [
         component: () => import('../views/Chapter2/Lession4')
       },
     ]
+  },
+  {
+    path: '/chapter3',
+    name: 'Chapter3', 
+    component: Layout,
+    redirect:'/chapter3/cover3',
+    children: [
+      {
+        path: 'cover3',
+        component: () => import('../views/Chapter3')
+      },
+      {
+        path: 'lession1',
+        component: () => import('../views/Chapter3/Lession1')
+      },
+      {
+        path: 'lession2',
+        component: () => import('../views/Chapter3/Lession2')
+      },
+      {
+        path: 'lession3',
+        component: () => import('../views/Chapter3/Lession3')
+      },
+      {
+        path: 'lession4',
+        component: () => import('../views/Chapter3/Lession4')
+      },
+    ]
   }
 ]
 

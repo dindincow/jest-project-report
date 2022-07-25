@@ -21,7 +21,7 @@
         <div class="section">
           <h2><span class="iconfont icon-tips_chat icon"></span>3.How 測試 ?</h2>
           <p>安裝測試工具</p>
-          <div style="width:90%"><img src="@/assets/ch1-lession1-2.png"></div>
+          <div style="width:90%"><img src="@/images/ch1-lession1-2.png"></div>
         </div>
       </div>
       <div class="right">
@@ -32,7 +32,7 @@
             vue add unit-jest
           </div>
           <p>2. 以創建手腳架時直接加入 </p>
-          <div class="img-pig"><img src="@/assets/ch1-lession1-1.jpg"></div>
+          <div class="img-pig"><img src="@/images/ch1-lession1-1.jpg"></div>
         </div>
       </div>
     </div>
